@@ -1,0 +1,231 @@
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: white;
+}
+
+.header ul li {
+  display: inline-block;
+  text-align: end;
+  position: relative;
+}
+
+.header ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.header ul li ul {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  background: #fafafa;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 10px;
+}
+
+.header ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #111;
+  position: relative;
+}
+
+.right-menubar .search-butn {
+  width: 60px;
+  border-right: 1px solid #ddd;
+  font-size: 22px;
+  font-weight: 400;
+  margin-right: 23px;
+  text-align: center;
+}
+
+.right-menubar .search-butn a {
+  color: #111;
+}
+
+.right-menubar .call-bar {
+  width: 200px;
+  position: relative;
+}
+
+.right-menubar .call-bar span {
+  color: #606060;
+  margin-left: 36px;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.right-menubar .call-bar i {
+  font-size: 30px;
+  color: #e73c3e;
+  position: absolute;
+  left: -10px;
+  top: 8px;
+}
+
+.right-menubar .call-bar a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-left: 34px;
+}
+
+.right-menubar .btn {
+  background-color: #e83b3e;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.right-menubar .btn:hover::before {
+  width: 100%;
+}
+
+.right-menubar .btn::before {
+  content: '';
+  background-color: #111111;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: #111111;
+  z-index: -1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.baner-section {
+  background: url("./img/main-banner2.jpg") no-repeat top center;
+  background-size: cover;
+  background-color: #f6f9fc;
+}
+
+.baner-section .baner-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.baner-section .baner-content h6 {
+  color: #e83b3e;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.baner-section .baner-content h1 {
+  color: #111111;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.baner-section .baner-content p {
+  color: #606060;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.baner-section .baner-content .btn {
+  background-color: #e83b3e;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.baner-section .baner-content .btn:hover::before {
+  width: 100%;
+}
+
+.baner-section .baner-content .btn::before {
+  content: '';
+  background-color: #111111;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: #111111;
+  z-index: -1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.baner-section .header-social-menu {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.baner-section .header-social-menu ul {
+  position: relative;
+}
+
+.baner-section .header-social-menu ul::before {
+  position: absolute;
+  left: 184px;
+  top: 13px;
+  width: 30px;
+  content: '';
+  height: 1px;
+  background-color: #111111;
+}
+
+.baner-section .header-social-menu ul li {
+  list-style: none;
+  padding: 0 15px;
+  color: #111111;
+}
+
+.baner-section .header-social-menu ul li span {
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+.baner-section .header-social-menu ul li a {
+  color: #111111;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.baner-section .header-social-menu ul li a:hover {
+  color: #e83b3e;
+}
+/*# sourceMappingURL=style.css.map */
